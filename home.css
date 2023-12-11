@@ -1,0 +1,440 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.navbar {
+    background-color: #ffffff; /* Cor de fundo branca */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinhar verticalmente */
+    padding: 10px;
+    height: 25px; /* Definindo a altura da barra de navegação */
+    justify-content: space-between; /* Mantém o alinhamento como antes */
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    width: 200px;
+    height: 40px; /* Ajuste de altura da imagem do logo */
+    margin-right: 10px;
+     display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.botao-login {
+    background-color: #F4686B;
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adicionando transição suave */
+}
+.botao-login:hover {
+    background-color: #DC535B; /* Altera a cor ao passar o mouse */
+}
+
+
+.search-bar {
+    position: relative;
+    display: flex;
+    margin-right: 550px;
+    
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/carinha\ azul.jpeg');
+    background-size: cover;
+    
+    position: absolute;
+    left: 5px; /* Ajuste a posição da imagem */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%);
+}
+
+.search-bar input[type="text"] {
+    padding: 5px 25px 5px 25px; /* Aumenta o espaço à direita para acomodar a imagem */
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.menu-items {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu-items li {
+    margin-right: 20px;
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: #483FEA; /* Cor dos itens do menu */
+    transition: color 0.3s ease; /* Efeito de transição */
+ 
+}
+
+.menu-items li a:hover {
+    color: #F4686B; /* Cor dos itens do menu no hover */
+   
+    transform: scale(1.1);
+}
+
+
+
+
+/* Estilizando as áreas */
+.area-superior, .area-media {
+    height: 50vh; /* Define a altura de cada área para metade da altura da janela */
+    width: 100%;
+}
+
+/* Definindo fundos diferentes para cada área */
+.area-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    height: 60vh; /* Alterado para 70vh */
+    position: relative;
+}
+
+
+
+
+
+
+.area-media {
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    background-color: #283845;
+}
+.quadrados-topo {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px; /* Ajuste a posição vertical conforme necessário */
+    left: 50%; /* Centraliza os quadrados horizontalmente */
+    transform: translateX(-50%); /* Centraliza os quadrados horizontalmente */
+    width: 80%; /* Define a largura para 80% do contêiner pai */
+}
+
+.quadrado {
+    width: 10%; /* Defina a largura em porcentagem ou outro valor relativo */
+    height: 200px;
+    background-color: #F4686B; /* Cor dos quadrados */
+    padding-right: 35%;
+    border-radius: 15px
+}
+
+/* Se desejar espaçamento à esquerda do primeiro quadrado, ajuste a margem à esquerda */
+.quadrado:first-child {
+    margin-left: 30px;
+}
+
+/* Se desejar espaçamento à direita do último quadrado, ajuste a margem à direita */
+.quadrado:last-child {
+    margin-right: 30px;
+}
+.conteudo {
+    text-align: center;
+    color: white;
+}
+.conteudo h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteudo p {
+    font-size: 14px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* Seus estilos CSS aqui */
+
+
+.tamanho-imagem {
+    width: 45%; /* Ajustei para ocupar mais espaço */
+    height: auto;
+    /* Removi a margem esquerda e utilizei margin-right para o espaçamento à direita */
+    margin-right: 0;
+    position: absolute;
+    top: 5px; /* Ajuste a posição vertical conforme necessário */
+    right: 20px;
+    left: 700px;
+}
+.texto {
+    flex: 1;
+    text-align: left;
+    max-width: 45%;
+    margin-bottom: 50px; /* Adicione um espaçamento extra no final do conteúdo */
+    position: absolute;
+    top: 100px; /* Ajuste a posição vertical conforme necessário */
+    left: 100px; /* Ajuste a posição horizontal conforme necessário */
+}
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; /* Reduzindo o tamanho do título */
+    margin-top: 0; /* Removendo margem superior padrão */
+}
+.descricao {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px; /* Reduzindo o tamanho do texto da descrição */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+.botao {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 10px; /* Espaço entre os botões */
+}
+.botao-agende {
+    background-color: #F4686B;
+    color: white;
+    border: none;
+    font-size: 14px; /* Reduzindo o tamanho da fonte */
+}
+.botao-agende:hover{
+    background-color: #DC535B; /* Altera a cor ao passar o mouse */
+}
+
+.botao-sobre {
+    background-color: white;
+    color: #483FEA;
+    border: 2px solid #483FEA;
+    font-size: 14px; /* Reduzindo o tamanho da fonte */
+}
+.botao-sobre:hover{
+    background-color:#483FEA;
+    color:#FFF
+}
+
+.quadrado .conteudo input[type="text"] {
+    width: 350px;
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 40px; /* Distância do parágrafo abaixo */
+    margin-left: 60px; /* Margem esquerda */
+    margin-right: 10px; /* Margem direita */
+    border: 1px solid #ccc; /* Borda do input */
+    border-radius: 5px; /* Borda arredondada */
+    box-sizing: border-box; /* Incluir padding e borda na largura total */
+}
+.quadrado .conteudo {
+    text-align: center;
+    color: white;
+}
+
+.quadrado .conteudo h3 {
+    font-size: 18px; /* Reduzindo o tamanho do título */
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 60px;
+}
+
+.quadrado .conteudo p {
+    font-size: 12px; /* Reduzindo o tamanho do texto */
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap; /* Evita quebras de linha */
+    overflow: visible; /* Exibe o texto completo */
+    margin-left: 60px;
+}
+.quadrado .conteudo p:nth-of-type(2) {
+    /* Estilos para o segundo parágrafo dentro do contêiner */
+    font-size: 11px;
+    color: #FFF; /* Cor do texto */
+    margin-top: 10px; /* Espaçamento do topo */
+}
+.quadrado .conteudo {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.quadrado .conteudo button.botao-quadrado {
+    font-size: 12px;
+    padding: 6px 12px;
+    border: none;
+    background-color: #DC535B;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block; /* Torna o botão um elemento em linha */
+    margin-left: 10px; /* Ajusta o espaçamento entre o botão e o texto */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+}
+.botao-quadrado {
+    position: absolute;
+    left: 300px; /* Ajuste o valor conforme necessário */
+    bottom: 1px;
+    
+}
+.imagem-quadrado {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.imagem-quadrado__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajuste a posição da imagem aqui */
+    margin-left: 300px; /* Ajuste conforme necessário */
+    margin-top: -400px; /* Ajuste conforme necessário */
+}
+
+
+
+
+
+.area-textinho{
+    background-color: #283845;
+    height: auto; /* Ajuste a altura conforme necessário */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    text-align: center; 
+}
+.area-textinho h3{
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+.area-textinho p {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    
+    /* Adicione aqui quaisquer estilos específicos que deseja aplicar */
+}
+
+
+
+
+.area-inferior{
+    background-color: #283845;
+    display: flex;
+    justify-content: center;
+    height: 120vh;
+}
+.cards-container {
+    display: flex;
+    justify-content: space-between; /* Espaços iguais entre os cards */
+    width: 80%; /* Largura do container de cards */
+    margin: 0 auto; /* Centraliza na página */
+    padding-top: 100px; /* Espaçamento no topo */
+}
+.card{
+    width: 300px;
+    height: 500px;
+    background-color: #202020;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+ 
+}
+.card2{
+    width: 300px;
+    height: 500px;
+    background-color: #202020;
+    border-radius: 15px;
+    margin-top: 50px;
+    transition: transform 0.5s ease-in-out;
+
+}
+.card3{
+    width: 300px;
+    height: 500px;
+    background-color: #202020;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.card:hover{
+    transform: scale(1.2);
+}
+.card2:hover{
+    transform: scale(1.2);
+}
+.card3:hover{
+    transform: scale(1.2);
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+.praia1{
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.txt-principal-card{
+    text-align: center;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.descricao-Card{
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+}
+.btn-card{
+    padding: 10px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 600px;
+    border-radius: 10px;
+    border: none;
+    transition: 1s;
+    background-color: #fffffffc;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-card:hover{
+    transition: 1s;
+    background-color: #925848be;
+    color: #fff;
+
+}
+.botao-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    text-decoration: none;
+}
