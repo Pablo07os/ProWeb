@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospede-se Conosco</title>
+    <link rel="stylesheet" href="css/form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/teu pai.jpeg" type="image/x-icon">
+  </head>
+<body>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- fundo de td -->
+    <div class="background"></div>
+   <!-- conteiner -->
+    <div class="container">
+      <div class="side left-side">
+        <a href="index.html" class="botao">Voltar</a>
+        <div class="teupai">
+            <Center>
+         <img src="images/teupailogo.jpeg.jpg">
+             </Center>
+        </div>
+        </div>
+        <div class="side right-side">
+          <h1>Formulario</h1>
+          <form class="formulario">
+              <label class="form-label" for="nome">Nome</label>
+              <input class="form-input" placeholder="Nome..." name="nome" type="text">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" placeholder="Email..." name="email" type="text">
+              <label class="form-label" for="suite">Escolha a Suite:</label>
+              <select class="form-select" id="suite" name="suite">
+                  <option value="standard">Standard - R$100,00</option>
+                  <option value="exclusive">Exclusive - R$200,00</option>
+                  <option value="luxo">Luxo - R$300,00</option>
+              </select>
+              <label class="form-label" for="Numero de Diarias">Numero de Diarias</label>
+              <input class="form-input" placeholder="Num Diarias" name="ndd" type="text">
+              <div class="servicos-adicionais">
+                  <label class="form-label">Serviços Adicionais:</label>
+                  <br>
+                  <input class="form-checkbox" type="checkbox" id="lavanderia" name="servicos" value="lavanderia">
+                  <label class="form-label" for="lavanderia">Serviço de Lavanderia</label>
+                  <input class="form-checkbox" type="checkbox" id="refeicoes" name="servicos" value="refeicoes">
+                  <label class="form-label" for="refeicoes">Refeições Incluídas</label>
+                  <input class="form-checkbox" type="checkbox" id="cityTour" name="servicos" value="cityTour">
+                  <label class="form-label" for="cityTour">City Tour</label>
+                  <div class="button">
+                      <button type="button" onclick="calcularDiarias()">Calcular Diárias</button><br>
+                  </div>
+                <br>
+                <label for="total">Valor Total:</label>
+                <input type="text" id="total" name="total" readonly>
+              </form>
+            </div>
+      </div>
+
+        <script src="js/form.js"></script>
+</body>
+</html>
